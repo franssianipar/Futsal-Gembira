@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: interBold;
+  src: url(../public/Inter-Bold.otf);
+}
+.interBold{
+  font-family: interBold;
+}
+
+@font-face {
+  font-family: interReguler;
+  src: url(../public/Inter-Regular.otf);
+}
+.interReguler{
+  font-family: interReguler;
+}
+
+@font-face {
+  font-family: interSemibold;
+  src: url(../public/Inter-SemiBold.otf);
+}
+.interSemibold{
+  font-family: interSemibold;
+}
+
