@@ -6,7 +6,7 @@ export default function Login() {
   return (
     <>
       <div
-        className="bg-cover px-52 py-44  bg-center ..."
+        className=" bg-cover py-44 bg-center ..."
         style={{ backgroundImage: `url(${futsal})` }}
       >
         <div className=" interBold text-center text-white text-9xl font-sans">
@@ -16,7 +16,7 @@ export default function Login() {
           Masuk Admin
         </div>
         <div className="text-white text-center px-96">
-          <div className=" interReguler text-2xl mt-10 text-left ml-36">
+          <div className=" interReguler text-2xl mt-10 text-left ml-28">
             Email
           </div>
           <input
@@ -24,7 +24,7 @@ export default function Login() {
             type="email"
             placeholder="Enter your Email"
           ></input>
-          <div className="interReguler text-2xl mt-10 text-left ml-36 ">
+          <div className="interReguler text-2xl mt-10 text-left ml-28 ">
             Password
           </div>
           <input
@@ -39,7 +39,7 @@ export default function Login() {
           </div>
         </div>
         <div className="  text-white  text-2xl flex relative">
-          <div className="  interReguler text-left absolute mt-20 w-4/12 text-justify">
+          <div className="  interReguler text-left ml-10 absolute mt-20 w-4/12 text-justify">
             "Semangat adalah modal utama dalam meraih kesuksesan"
           </div>
         </div>

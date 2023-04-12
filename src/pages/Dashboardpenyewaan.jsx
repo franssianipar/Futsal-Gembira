@@ -19,7 +19,7 @@ ChartJS.register(
   Legend
 );
 
-export default function Dashboard() {
+export default function Dashboardpenyewaan() {
   const navigate = useNavigate();
   const data = {
     labels: [
@@ -59,8 +59,64 @@ export default function Dashboard() {
     plugins: [ChartDataLabels],
     datasets: [
       {
-        label: "Biaya Admin - 5.5% - Rp 2.144.493",
-        data: [16.32],
+        label: "Lainnya - 13.22% - 64 jam",
+        data: [13.22],
+        backgroundColor: ["#7E7E7E"],
+
+        datalabels: {
+          color: "White",
+          font: {
+            weight: "bold",
+            size: 30,
+          },
+        },
+        barPercentage: 1.5,
+      },
+      {
+        label: "Pukul 14.00 hingga 15.00 - 11.11% - 53 Jam",
+        data: [11.11],
+        backgroundColor: ["#B06A00"],
+
+        datalabels: {
+          color: "White",
+          font: {
+            weight: "bold",
+            size: 30,
+          },
+        },
+        barPercentage: 1.5,
+      },
+      {
+        label: "Pukul 21.00 hingga 22.00 - 12.00% - 59 Jam",
+        data: [12.0],
+        backgroundColor: ["#570081"],
+
+        datalabels: {
+          color: "White",
+          font: {
+            weight: "bold",
+            size: 30,
+          },
+        },
+        barPercentage: 1.5,
+      },
+      {
+        label: "Pukul 16.00 hingga 17.00 - 14.11% - 69 Jam",
+        data: [14.11],
+        backgroundColor: ["#873116"],
+
+        datalabels: {
+          color: "White",
+          font: {
+            weight: "bold",
+            size: 30,
+          },
+        },
+        barPercentage: 1.5,
+      },
+      {
+        label: "Pukul 20.00 hingga 21.00 - 14.77% - 72 Jam",
+        data: [14.77],
         backgroundColor: ["#219E44"],
 
         datalabels: {
@@ -73,8 +129,8 @@ export default function Dashboard() {
         barPercentage: 1.5,
       },
       {
-        label: "Sewa Per Jam - 43.44% - Rp 16.785.006",
-        data: [25.73],
+        label: "Pukul 15.00 hingga 16.00 - 15.00% - 73 Jam",
+        data: [15.0],
         backgroundColor: ["#167C93"],
         datalabels: {
           color: "White",
@@ -87,8 +143,8 @@ export default function Dashboard() {
         barPercentage: 1.5,
       },
       {
-        label: "Sewa Khusus Malam Per Jam - 51.01% - Rp 19.710.018",
-        data: [33.99],
+        label: "Pukul 17.00 hingga 18.00 - 19.79% - 95 Jam",
+        data: [19.79],
         backgroundColor: ["#CAB91D"],
         datalabels: {
           color: "White",
@@ -315,9 +371,9 @@ export default function Dashboard() {
                 }}
               ></Bar>
             </div>
-            <div className="mt-10 ml-10 py-5 w-11/12 border-2 rounded-lg ">
+            <div className="mt-10 ml-10  py-5 w-11/12 border-2 rounded-lg ">
               <Bar
-                className="ml-10 mt-5"
+                className="px-5  mt-5"
                 data={data1}
                 options={{
                   indexAxis: "y",
@@ -331,7 +387,7 @@ export default function Dashboard() {
                         usePointStyle: true,
                         pointStyle: "rect",
                         font: {
-                          size: 20,
+                          size: 15,
                         },
                       },
                     },
