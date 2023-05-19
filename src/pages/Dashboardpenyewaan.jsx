@@ -165,12 +165,13 @@ export default function Dashboardpenyewaan() {
           <div className="py-4 text-white text-5xl"> Futsal Gembira</div>
           <div className="flex text-2xl  ml-auto">
             <button
-              className="relative px-32 text-white flex py-4 w-full items-center justify-center overflow-hidden font-medium transition duration-300 ease-out group "
+              className="text-white  bg-[#363636] "
               onClick={() => {
-                navigate("/");
+                navigate("/dashboard");
               }}
             >
               <svg
+                className="absolute mt-1 ml-2"
                 xmlns="http://www.w3.org/2000/svg"
                 height="30"
                 fill="#FFFFFF"
@@ -183,22 +184,7 @@ export default function Dashboardpenyewaan() {
                   <path d="M29.75,10.5H15.38a4.89,4.89,0,0,0-4.88,4.88V29.75a1.5,1.5,0,0,0,1.5,1.5H29.75a1.5,1.5,0,0,0,1.5-1.5V12A1.5,1.5,0,0,0,29.75,10.5Zm-1.5,17.75H13.5V15.38a1.88,1.88,0,0,1,1.88-1.88H28.25Z" />
                 </g>
               </svg>
-              <div className="absolute py-10 items-center justify-center flex w-full h-full text-white duration-300  -translate-x-full bg-[#363636]  group-hover:translate-x-0  ease">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="30"
-                  fill="#FFFFFF"
-                  viewBox="0 0 64 64"
-                >
-                  <g id="Layer_17" data-name="Layer 17">
-                    <path d="M52,32.75H34.25a1.5,1.5,0,0,0-1.5,1.5V52a1.5,1.5,0,0,0,1.5,1.5H48.62a4.89,4.89,0,0,0,4.88-4.88V34.25A1.5,1.5,0,0,0,52,32.75ZM50.5,48.62a1.88,1.88,0,0,1-1.88,1.88H35.75V35.75H50.5Z" />
-                    <path d="M48.62,10.5H34.25a1.5,1.5,0,0,0-1.5,1.5V29.75a1.5,1.5,0,0,0,1.5,1.5H52a1.5,1.5,0,0,0,1.5-1.5V15.38A4.89,4.89,0,0,0,48.62,10.5ZM50.5,28.25H35.75V13.5H48.62a1.88,1.88,0,0,1,1.88,1.88Z" />
-                    <path d="M29.75,32.75H12a1.5,1.5,0,0,0-1.5,1.5V48.62a4.89,4.89,0,0,0,4.88,4.88H29.75a1.5,1.5,0,0,0,1.5-1.5V34.25A1.5,1.5,0,0,0,29.75,32.75ZM28.25,50.5H15.38a1.88,1.88,0,0,1-1.88-1.88V35.75H28.25Z" />
-                    <path d="M29.75,10.5H15.38a4.89,4.89,0,0,0-4.88,4.88V29.75a1.5,1.5,0,0,0,1.5,1.5H29.75a1.5,1.5,0,0,0,1.5-1.5V12A1.5,1.5,0,0,0,29.75,10.5Zm-1.5,17.75H13.5V15.38a1.88,1.88,0,0,1,1.88-1.88H28.25Z" />
-                  </g>
-                </svg>
-                <div className="px-10">Dashboard</div>
-              </div>
+              <div className="px-10 ml-5">Dashboard</div>
             </button>
             <button className="relative px-32 text-white flex py-4 w-full items-center justify-center overflow-hidden font-medium transition duration-300 ease-out group ">
               <svg
@@ -306,18 +292,18 @@ export default function Dashboardpenyewaan() {
           </div>
           <div className=" flex justify-between mt-10 mx-20 ">
             <button
-              className=" z-10 relative hover:rounded-lg  bg-transparent  font-medium uppercase text-white transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-y-0 before:bg-[#2F2F2F] before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-y-100 w-6/12  text-left text-lg  rounded-lg px-10 py-10 mt-10 "
+              className="  hover:border-2  z-10 relative   bg-transparent  font-medium uppercase text-white transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-y-0  before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-y-100 w-6/12  text-left text-lg  rounded-lg px-10 py-10 mt-10 "
               onClick={() => {
-                navigate("/");
+                navigate("/dashboard");
               }}
             >
               Jumlah Pendapatan - Januari 2023
               <div className="text-3xl">Rp 38.639.517</div>
             </button>
             <button
-              className=" z-10 relative hover:rounded-lg  bg-transparent  font-medium uppercase text-white transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-y-0 before:bg-[#2F2F2F] before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-y-100 w-6/12  text-right text-lg  rounded-lg px-10 py-10 mt-10"
+              className=" bg-[#2F2F2F] text-white w-6/12  text-right text-lg  font-medium uppercase text-white  px-10 py-10 mt-10"
               onClick={() => {
-                navigate("/dashboard");
+                navigate("/dashboardpenyewaan");
               }}
             >
               Jumlah Jam Penyewaan - Januari 2023
